@@ -41,6 +41,10 @@
     </section>
     </main>
  
-    <footer> <p>Essas foram minhas férias. ©2025 </p></footer>
+    <footer>
+        <!-- Adicionando margem superior para o botão "Voltar" -->
+<div class="btn-actions" style="margin-top: 20px;">
+    <a href="index.php" class="sessao-login-btn">Voltar</a>
+</div> <p>Essas foram minhas férias. ©2025 </p></footer>
 </body>
 </html>

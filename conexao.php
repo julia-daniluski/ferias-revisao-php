@@ -1,19 +1,20 @@
 <?php
-$servername = "localhost";
+
+$servername = "localhost:3306";
 $username = "root";
 $password = "";
 $dbname = "ferias";
 
-// Criar a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+try {
+    // Confere se as informações estão corretas
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar se houve erro na conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+    // Verifica se houve algum erro na conexão
+    if ($conn->connect_error) {
+        throw new Exception("Falha na conexão: " . $conn->connect_error);
+    }
+} catch (Exception $e) {
+    // Exibe uma mensagem de erro amigável
+    echo "Erro ao conectar ao banco de dados: " . $e->getMessage();
 }
-
-// Aqui você pode adicionar qualquer outra operação que precise ser realizada no banco de dados
-
-$conn->close();
 ?>
-
