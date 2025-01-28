@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+.sessao-login-btn {
+    background-color: #2d8ceb; 
+    color: rgb(0, 0, 0);
+    padding: 10px 110px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px #000; 
+  }
+
+  .sessao-login-btn:hover {
+    background-color: #2d8ceb8d; 
+    box-shadow: 3px 3px 4px #004c9c; 
+  }
+
+ /* Garante que a página ocupe 100% da altura e remova margens padrão */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    background-color: #90DEEE;
+}
+
+/* Estilo do formulário */
+form { 
+    background-color: #90DEEE;
+    padding: 40px;  /* Ajuste o padding para não ficar tão grande */
+    border-radius: 8px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Estilo da div principal (container) */
+div {    
+    background-color: #ebee90;
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente dentro da div */
+    align-items: center;     /* Centraliza o conteúdo horizontalmente dentro da div */
+}
+
+/* Estilos para outras divs específicas */
+.container-login, #container, .container-cadastro {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    background-color: #ebee90;
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 100%; /* Ajusta a largura para preencher o espaço disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #f9f9f9; /* Cor de fundo */
+    transition: border-color 0.3s; /* Efeito suave na mudança da borda */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Altera a cor da borda quando o campo está em foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+input[type="password"] {
+    width: 100%; /* Ajusta a largura para preencher o espaço disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #f9f9f9; /* Cor de fundo */
+    transition: border-color 0.3s; /* Efeito suave na mudança da borda */
+}
+
+input[type="password"]:focus {
+    border-color: #007bff; /* Altera a cor da borda quando o campo está em foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+

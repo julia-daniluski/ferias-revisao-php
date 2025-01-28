@@ -39,12 +39,14 @@
         <img src="imgs/trabalho.jpg" alt="" class="img3">
         <p>Eu voltei para casa e voltei a trabalhar...</p>
     </section>
+
     </main>
  
     <footer>
-        <!-- Adicionando margem superior para o botão "Voltar" -->
-<div class="btn-actions" style="margin-top: 20px;">
-    <a href="index.php" class="sessao-login-btn">Voltar</a>
-</div> <p>Essas foram minhas férias. ©2025 </p></footer>
+
+    <a href="login.php" class="login-btn">Voltar</a> 
+    <br>
+    <br>
+    <p>Essas foram minhas férias. ©2025 </p></footer>
 </body>
 </html>

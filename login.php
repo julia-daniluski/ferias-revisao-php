@@ -23,21 +23,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="imgs/favicon.png">
     <title>Minhas Férias</title>
 </head>
 <body>
-  <div id="border-box">
+
     <form id="form-login" method="POST">
-        <section id="login">                    
-            <div class="container-login">
+        <div id="login">                    
+
                 <h2 class="login-texto">Usuário</h2>
                 <input type="text" name="usuario" placeholder="E-mail ou Número" required>
-                
+                <br>
                 <h2 class="login-texto">Senha</h2>
                 <input type="password" name="senha" placeholder="Digite sua senha" required>
-
+                <br>
+                <br>
                 <!-- Botão de envio -->
                 <button type="submit" class="sessao-login-btn">Entrar</button>
 
@@ -45,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php if (!empty($error)): ?>
                     <p style="color: red;"><?php echo htmlspecialchars($error); ?></p>
                 <?php endif; ?>
-            </div>
-        </section>
+
+                </div>
     </form>
   </div>
 </body>

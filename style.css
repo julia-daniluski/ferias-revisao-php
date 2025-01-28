@@ -20,10 +20,10 @@ table {
 body {
     background-color: #90DEEE;
     color: #000000;
-    display: flex; /* Alinha main e aside lado a lado */
-    justify-content: space-between; /* Adiciona espaço entre os elementos */
-    min-height: 100vh;
-    padding-top: 140px; /* Espaçamento superior devido ao header fixo */
+    display: flex;
+    justify-content: space-between; 
+    min-height: 1400px;
+    padding-top: 140px; 
 }
 
 header {
@@ -80,7 +80,7 @@ main {
 
 aside {
     width: 30%; /* Ajuste a largura conforme necessário */
-    height: auto; 
+    height: 1400px; 
     padding: 20px;
     box-sizing: border-box;
     background-color: #2D8CEB;
@@ -105,6 +105,21 @@ section {
     background-color: #f5f8239a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para a caixinha */
 }
+
+section #login{
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para a caixinha */
+}
+
 
 .sonic {
     padding-left: 0;
@@ -202,6 +217,23 @@ footer {
     position: relative;
 
 }
+.login-btn {
+    background-color: #2d8ceb; 
+    color: rgb(0, 0, 0);
+    padding: 14px 28px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px #000; 
+  }
+
+  .login-btn:hover {
+    background-color: #2d8ceb8d; 
+    box-shadow: 3px 3px 4px #004c9c; 
+  }
+
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
@@ -231,3 +263,4 @@ footer {
         background-size: contain; /* Melhor adaptação da imagem */
     }
 }
+
