@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #90DEEE;
+    color: #000000;
+    display: flex; /* Alinha main e aside lado a lado */
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    min-height: 100vh;
+    padding-top: 140px; /* Espaçamento superior devido ao header fixo */
+}
+
+header {
+    background-color: #2D8CEB;
+    position: absolute; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    text-align: center;
+    z-index: 1000;
+    color: white; /* Cor do texto no cabeçalho para contraste */
+    box-sizing: border-box;
+    display: flex; /* Utiliza flexbox para o layout */
+    flex-direction: column; /* Organiza os elementos na vertical */
+    justify-content: center; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+header h2 {
+    margin: 0; /* Remove margem do h2 */
+    font-size: 16px; /* Tamanho menor para o h2 */
+    font-weight: normal; /* Deixa o h2 com peso de fonte normal */
+}
+
+header h1 {
+    margin: 10px 0; /* Adiciona espaçamento entre h1 e outros elementos */
+    font-size: 36px; /* Tamanho maior para o h1 */
+}
+
+header p {
+    margin: 5px 0; /* Adiciona espaçamento entre p e outros elementos */
+    font-size: 14px; /* Tamanho menor para o p */
+}
+
+img.img-header {
+    width: 80px; /* Ajuste do tamanho da imagem */
+    height: auto;
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    left: 20px; /* Alinha a imagem à esquerda */
+    top: 50%; /* Centraliza a imagem verticalmente em relação ao h1 */
+    transform: translateY(-50%); /* Ajuste para garantir o alinhamento vertical perfeito */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Ajuste a largura conforme necessário */
+    margin-top: 120px; 
+    flex-grow: 1; 
+    align-items: center;
+}
+
+aside {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    height: auto; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2D8CEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; /* Cor do texto dentro do aside */
+}
+
+
+section {
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f5f8239a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para a caixinha */
+}
+
+.sonic {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+}
+
+.sonic .img2 {
+    height: 150px; 
+    width: 150px; /* Faz a imagem ocupar a largura total do container */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Cobre todo o espaço disponível */
+}
+
+h4 {
+    text-align: center;
+    margin: 10px 0; /* Adiciona um espaçamento ao redor do título */
+}
+
+.trabalho {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+}
+
+.strabalho .img3 {
+    height: 150px; 
+    width: 150px; /* Faz a imagem ocupar a largura total do container */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Cobre todo o espaço disponível */
+}
+
+h5 {
+    text-align: center;
+    margin: 10px 0; /* Adiciona um espaçamento ao redor do título */
+}
+.viagem {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+    margin: 10px 0; /* Adiciona um espaçamento ao redor do título */
+}
+
+h3 {
+    text-align: center;
+    font-size: 53px;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+img.rolagem {
+    width: 50%;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin: 0 auto; /* Centralizar a imagem */
+}
+
+img.header {
+    width: 20%;
+    height: auto;
+    align-items: center;
+    display: block;
+}
+
+/* Adicionando ajustes no item de destaques */
+.highlights-item {
+    width: 48%;
+    margin: 0 auto;
+}
+
+.highlights-item img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px;
+}
+
+footer {
+    height: 100px;
+    padding-top: 1200px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    color: #000000; 
+    position: relative;
+
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .sonic-content {
+        padding-left: 0;
+    }
+
+    /* Ajuste na imagem do header para telas pequenas */
+    img.header {
+        width: 50%; /* Aumenta a largura da imagem no header */
+    }
+
+    /* Ajuste no banner da seção de boas-vindas */
+    .sonic .img2 {
+        height: 200px; /* Ajuste de altura para telas pequenas */
+        background-size: contain; /* Melhor adaptação da imagem */
+    }
+}
